@@ -78,7 +78,7 @@ export default class SlideMenu extends Component {
       <View style={loginContainer}>
         <Text style={username}>{user ? user.fullname : null}</Text>
         <View>
-          <TouchableOpacity style={btnSignInStyle} >
+          <TouchableOpacity style={btnSignInStyle} onPress={() => this.props.navigation.navigate('OrderScreen', { email: user.email })}>
             <Text style={btnTextSignIn}><Icon name="md-time" color="white" size={23} style={iconStyle} />  Order History</Text>
           </TouchableOpacity>
           <TouchableOpacity style={btnSignInStyle}>

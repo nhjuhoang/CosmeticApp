@@ -22,6 +22,7 @@ import SlideMenu from './Src/SlideMenu/SlideMenu';
 import ProductDetail from './Src/ProductDetail/ProductDetail';
 import ListProduct from './Src/ListProduct/ListProduct';
 import ConfirmCart from './Src/ConfirmCart/ConfirmCart';
+import OrderHistory from './Src/OrderHistory/OrderHistory';
 
 
 import Login from './Src/Authentication/Login';
@@ -57,6 +58,13 @@ export const HomeStack = StackNavigator
             screen: Register,
             navigationOptions: {
                 header: null
+            }
+        },
+        OrderScreen: {
+            screen: OrderHistory,
+            navigationOptions : {
+                title: 'Order History',
+                headerTintColor: '#FC6666',
             }
         }
     },
@@ -94,6 +102,13 @@ export const ShopStack = StackNavigator
             screen: Register,
             navigationOptions: {
                 header: null
+            }
+        },
+        OrderScreen: {
+            screen: OrderHistory,
+            navigationOptions : {
+                title: 'Order History',
+                headerTintColor: '#FC6666',
             }
         }
     },
