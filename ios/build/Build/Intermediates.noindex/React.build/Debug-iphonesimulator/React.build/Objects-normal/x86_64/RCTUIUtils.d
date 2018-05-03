@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/hoangnhieu/Desktop/CosmeticRN/node_modules/react-native/React/UIUtils/RCTUIUtils.m \
-  /Users/hoangnhieu/Desktop/CosmeticRN/node_modules/react-native/React/UIUtils/RCTUIUtils.h
+  /Users/hoangnhieu/Desktop/CosmeticApp/node_modules/react-native/React/UIUtils/RCTUIUtils.m \
+  /Users/hoangnhieu/Desktop/CosmeticApp/node_modules/react-native/React/UIUtils/RCTUIUtils.h

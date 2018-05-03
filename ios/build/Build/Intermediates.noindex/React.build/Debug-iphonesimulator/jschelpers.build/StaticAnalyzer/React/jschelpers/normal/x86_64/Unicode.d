@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/hoangnhieu/Desktop/CosmeticRN/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
-  /Users/hoangnhieu/Desktop/CosmeticRN/node_modules/react-native/ReactCommon/jschelpers/Unicode.h
+  /Users/hoangnhieu/Desktop/CosmeticApp/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
+  /Users/hoangnhieu/Desktop/CosmeticApp/node_modules/react-native/ReactCommon/jschelpers/Unicode.h

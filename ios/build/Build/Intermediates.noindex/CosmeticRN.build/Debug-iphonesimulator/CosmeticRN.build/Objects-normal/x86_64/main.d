@@ -1,2 +1,2 @@
-dependencies: /Users/hoangnhieu/Desktop/CosmeticRN/ios/CosmeticRN/main.m \
-  /Users/hoangnhieu/Desktop/CosmeticRN/ios/CosmeticRN/AppDelegate.h
+dependencies: /Users/hoangnhieu/Desktop/CosmeticApp/ios/CosmeticRN/main.m \
+  /Users/hoangnhieu/Desktop/CosmeticApp/ios/CosmeticRN/AppDelegate.h
