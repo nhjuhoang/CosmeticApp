@@ -16,8 +16,52 @@ import firebase, { firebaseApp } from '../Api/firebaseConfig';
 
 export default class Search extends Component {
 
-  _searchProducByName(keyword = '') {
-    this.rootRef.ref('products').orderByChild('name').startAt(keyword).endAt(keyword + "\uf8ff").on('value', (snaps) => {
+  // _searchProducByName(keyword = '') {
+  //   this.rootRef.ref('products').orderByChild('name').startAt(keyword).endAt(keyword + "\uf8ff").on('value', (snaps) => {
+  //     const list = [];
+  //     snaps.forEach(element => {
+  //       list.push({
+  //         key: element.key,
+  //         name: element.toJSON().name,
+  //         price: element.toJSON().price,
+  //         images: element.toJSON().images,
+  //         tag: element.toJSON().tags,
+  //         type: element.toJSON().product_type,
+  //         origin: element.toJSON().origin,
+  //         view: element.toJSON().view,
+  //         colors: element.toJSON().color,
+  //         description: element.toJSON().description
+  //       });
+  //     });
+  //     this.setState({
+  //       ListProductByName: list
+  //     });
+  //   });
+  // }
+
+  _searchProducByName(keyword) {
+
+    let ProductsByname = keyword !== '' ? this.state.ListProduct.filter(p => p.name.toLowerCase().includes(keyword.toLowerCase())) : [];
+    this.setState({
+      ListProductByName: ProductsByname
+    });
+  }
+
+  _GoDetailProduct(item) {
+    this.props.navigation.navigate('ProductDetailScreen', { product: item })
+  }
+
+  constructor(props) {
+    super(props);
+    this.rootRef = firebaseApp.database();
+    this.state = {
+      ListProduct: [],
+      ListProductByName: [],
+    }
+  }
+
+  componentWillMount() {
+    this.rootRef.ref('products').on('value', (snaps) => {
       const list = [];
       snaps.forEach(element => {
         list.push({
@@ -34,25 +78,9 @@ export default class Search extends Component {
         });
       });
       this.setState({
-        ListProductByName: list
+        ListProduct: list
       });
     });
-  }
-
-  _GoDetailProduct(item) {
-    this.props.navigation.navigate('ProductDetailScreen', { product: item })
-  }
-
-  constructor(props) {
-    super(props);
-    this.rootRef = firebaseApp.database();
-    this.state = {
-      ListProductByName: [],
-    }
-  }
-
-  componentWillMount() {
-    this._searchProducByName();
   }
 
   render() {
@@ -129,11 +157,11 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 3 },
     shadowOpacity: 0.2,
     margin: 2,
-    padding : 1,
-    backgroundColor : '#F3FBFF',
+    padding: 1,
+    backgroundColor: '#F3FBFF',
     borderRadius: 10,
     marginLeft: 5,
-    marginRight :5
+    marginRight: 5
   },
   productImage: {
     width: produtWidth,
