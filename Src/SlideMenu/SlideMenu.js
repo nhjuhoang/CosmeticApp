@@ -58,6 +58,14 @@ export default class SlideMenu extends Component {
       .catch(err => console.log('LOI CHECK LOGIN', err));
   }
 
+  _GoInfomation(user) {
+    this.props.navigation.navigate('InfomationScreen', {user: user});
+  }
+
+  _GoOrder(email) {
+    this.props.navigation.navigate('OrderScreen', { email: email })
+  }
+
 
   render() {
     const {
@@ -78,10 +86,10 @@ export default class SlideMenu extends Component {
       <View style={loginContainer}>
         <Text style={username}>{user ? user.fullname : null}</Text>
         <View>
-          <TouchableOpacity style={btnSignInStyle} onPress={() => this.props.navigation.navigate('OrderScreen', { email: user.email })}>
+          <TouchableOpacity style={btnSignInStyle} onPress={() => this._GoOrder(user.email)}>
             <Text style={btnTextSignIn}><Icon name="md-time" color="white" size={23} style={iconStyle} />  Order History</Text>
           </TouchableOpacity>
-          <TouchableOpacity style={btnSignInStyle}>
+          <TouchableOpacity style={btnSignInStyle} onPress={() => this._GoInfomation(user)}>
             <Text style={btnTextSignIn}><Icon name="ios-create" color="white" size={23} style={iconStyle} />  Infomation</Text>
           </TouchableOpacity>
           <TouchableOpacity style={btnSignInStyle} onPress={() => this._Logout()} >

@@ -23,6 +23,7 @@ import ProductDetail from './Src/ProductDetail/ProductDetail';
 import ListProduct from './Src/ListProduct/ListProduct';
 import ConfirmCart from './Src/ConfirmCart/ConfirmCart';
 import OrderHistory from './Src/OrderHistory/OrderHistory';
+import Infomation from './Src/Infomation/Infomation';
 
 
 import Login from './Src/Authentication/Login';
@@ -62,9 +63,19 @@ export const HomeStack = StackNavigator
         },
         OrderScreen: {
             screen: OrderHistory,
-            navigationOptions : {
+            navigationOptions: {
                 title: 'Order History',
                 headerTintColor: '#FC6666',
+            }
+        },
+        InfomationScreen: {
+            screen: Infomation,
+            navigationOptions: {
+                headerStyle: {
+                    backgroundColor: '#B3B3B3',
+                },
+                title: 'Infomation',
+                headerTintColor: '#2E9EFF',
             }
         }
     },
@@ -106,9 +117,19 @@ export const ShopStack = StackNavigator
         },
         OrderScreen: {
             screen: OrderHistory,
-            navigationOptions : {
+            navigationOptions: {
                 title: 'Order History',
                 headerTintColor: '#FC6666',
+            }
+        },
+        InfomationScreen: {
+            screen: Infomation,
+            navigationOptions: {
+                headerStyle: {
+                    backgroundColor: '#B3B3B3',
+                },
+                title: 'Infomation',
+                headerTintColor: '#2E9EFF',
             }
         }
     },
