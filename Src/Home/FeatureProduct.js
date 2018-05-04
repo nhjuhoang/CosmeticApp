@@ -11,44 +11,11 @@ export default class FeatureProduct extends Component {
 
     constructor(props) {
         super(props);
-        this.rootRef = firebaseApp.database();
-        this.state = {
-            featureProductList: [],
-        }
-    }
-
-    componentWillMount() {
-
-        this.rootRef.ref('products').on('value', (snaps) => {
-            const list = [];
-            const temp = [];
-            snaps.forEach(element => {
-                list.push({
-                    key: element.key,
-                    name: element.toJSON().name,
-                    price: element.toJSON().price,
-                    images: element.toJSON().images,
-                    tag: element.toJSON().tags,
-                    createDay: element.toJSON().created_at,
-                    origin: element.toJSON().origin,
-                    view: element.toJSON().view,
-                    colors: element.toJSON().color,
-                    description: element.toJSON().description
-                });
-                list.sort((a, b) => b.view - a.view);
-            });
-            for (let i = 0; i < 6; i++) {
-                temp.push(list[i]);
-            };
-            this.setState({
-                featureProductList: temp
-            });
-        });
     }
 
     render() {
         // console.log(navigate)
-        const { navigate } = this.props;
+        const { navigate, featureProductList } = this.props;
         const {
             container,
             titleContainer,
@@ -73,11 +40,11 @@ export default class FeatureProduct extends Component {
                     <FlatList
                         contentContainerStyle={body}
                         numColumns={1}
-                        data={this.state.featureProductList}
+                        data={featureProductList}
                         keyExtractor={(item, index) => index.toString()}
                         renderItem={({ item }) =>
                             <TouchableOpacity style={productContainer} onPress={() => navigate.navigate('ProductDetailScreen', { product: item })}>
-                                {this.state.featureProductList.length ? <Image source={{ uri: `${item.images.i1.src}` }} style={productImage} /> : imageDefault}
+                                {featureProductList.length ? <Image source={{ uri: `${item.images.i1.src}` }} style={productImage} /> : imageDefault}
                                 <Text style={produceName} numberOfLines={2}>{item.name}</Text>
                                 <Text style={producePrice}>{item.price.toFixed(2)}$</Text>
                             </TouchableOpacity>

@@ -64,7 +64,7 @@ class ProductDetail extends Component {
   componentWillMount() {
     const { params } = this.props.navigation.state;
     if (params.product !== null) {
-      this.setState({ isLoading: true, product : params.product });
+      this.setState({ isLoading: true, product: params.product });
     }
   }
 
@@ -122,7 +122,9 @@ class ProductDetail extends Component {
                 <Text style={Proprice}>{Proudct_price} $</Text>
 
                 <View style={ColorView}>
-                  {colorRadioBtn}
+                  <View>
+                    {colorRadioBtn}
+                  </View>
                   <TouchableOpacity style={btnCart} onPress={() => this._addProductToCart()}>
                     <Icon name='md-add-circle' color='white' size={22} /><Text style={{ textAlign: 'center', marginLeft: 5 }}>Add cart</Text>
                   </TouchableOpacity>
@@ -199,7 +201,9 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     backgroundColor: '#FC4C39',
     //width: 100,
-    borderRadius: 10,
+    borderRadius: 4,
+    borderBottomRightRadius : 30,
+    borderTopRightRadius : 30,
     padding: 5,
     marginRight: 5,
     justifyContent: 'center',

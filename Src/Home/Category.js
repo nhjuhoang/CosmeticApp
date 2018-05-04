@@ -10,13 +10,13 @@ export default class Category extends React.Component {
             <View>
                 <View style={styles.contentContainer}>
                     <View style={styles.col2}>
-                        <TouchableOpacity onPress={()=> navigate.navigate('ListProductScreen',{type: 'Lipstick'})}>
+                        <TouchableOpacity onPress={() => navigate.navigate('ListProductScreen', { type: 'Lipstick' })}>
                             <CustomImage imageSource={require('../../Assets/LipsCG.jpg')} header="Lipstick" />
                         </TouchableOpacity>
                     </View>
 
                     <View style={styles.col1}>
-                        <TouchableOpacity onPress={()=> navigate.navigate('ListProductScreen',{type: 'Nails'})}>
+                        <TouchableOpacity onPress={() => navigate.navigate('ListProductScreen', { type: 'Nails' })}>
                             <CustomImage imageSource={require('../../Assets/NailsCG.jpg')} header="Nail" />
                         </TouchableOpacity>
                     </View>
@@ -24,12 +24,12 @@ export default class Category extends React.Component {
 
                 <View style={styles.contentContainer}>
                     <View style={styles.col3}>
-                        <TouchableOpacity onPress={()=> navigate.navigate('ListProductScreen',{type: 'Face'})}>
+                        <TouchableOpacity onPress={() => navigate.navigate('ListProductScreen', { type: 'Face' })}>
                             <CustomImage imageSource={require('../../Assets/FaceCG.jpg')} header="Face" />
                         </TouchableOpacity>
                     </View>
                     <View style={styles.col4}>
-                        <TouchableOpacity onPress={()=> navigate.navigate('ListProductScreen',{type: 'Eye'})}>
+                        <TouchableOpacity onPress={() => navigate.navigate('ListProductScreen', { type: 'Eye' })}>
                             <CustomImage imageSource={require('../../Assets/EyeCG.jpeg')} header="Eye" />
                         </TouchableOpacity>
                     </View>
