@@ -7,6 +7,9 @@ import {
 
 import Icon from 'react-native-vector-icons/FontAwesome';
 
+import { firebaseApp } from '../Api/firebaseConfig';
+import GetToken from '../Api/GetToken';
+
 export default class Infomation extends Component {
 
     constructor(props) {
@@ -31,8 +34,25 @@ export default class Infomation extends Component {
         })
     }
 
-    _ChangeInfomation(){
-
+    _ChangeInfomation(name, email, phone, address) {
+        GetToken().then(
+            token => {
+                if (token !== '') {
+                    firebaseApp.database().ref('users/' + token).set({
+                        fullname: name,
+                        email: email,
+                        phone: phone,
+                        address: address
+                    })
+                }
+            });
+        this.setState({
+            fullname: name,
+            email: email,
+            phone: phone,
+            address: address,
+        })
+        alert('success')
     }
 
 
@@ -45,50 +65,48 @@ export default class Infomation extends Component {
                 <View style={fromchange}>
                     <Text style={{ marginTop: 10 }}>Full name</Text>
                     <TextInput style={inputbox}
-                        placeholderTextColor='#333333'
                         underlineColorAndroid='rgba(0,0,0,0)'
                         autoCapitalize='none'
                         autoCorrect={false}
                         value={fullname}
-                    //editable={!this.state.isShowActivity}
-                    //onChangeText={(text) => this.setState({ email: text })}
+                        //editable={!this.state.isShowActivity}
+                        onChangeText={(text) => this.setState({ fullname: text })}
                     />
 
                     <Text>Email</Text>
                     <TextInput style={inputbox}
-                        placeholderTextColor='#333333'
                         underlineColorAndroid='rgba(0,0,0,0)'
                         autoCapitalize='none'
                         autoCorrect={false}
                         value={email}
-                    //editable={!this.state.isShowActivity}
-                    // onChangeText={(text) => this.setState({ password: text })}
+                        //editable={!this.state.isShowActivity}
+                        onChangeText={(text) => this.setState({ email: text })}
                     />
 
                     <Text>Phone</Text>
                     <TextInput style={inputbox}
-                        placeholderTextColor='#333333'
                         underlineColorAndroid='rgba(0,0,0,0)'
                         autoCapitalize='none'
                         autoCorrect={false}
                         value={phone}
-                    //editable={!this.state.isShowActivity}
-                    // onChangeText={(text) => this.setState({ password: text })}
+                        //editable={!this.state.isShowActivity}
+                        onChangeText={(text) => this.setState({ phone: text })}
                     />
 
                     <Text>Address</Text>
                     <TextInput style={inputbox}
-                        placeholderTextColor='#333333'
+                        multiline={true}
+                        numberOfLines={4}
                         underlineColorAndroid='rgba(0,0,0,0)'
                         autoCapitalize='none'
                         autoCorrect={false}
                         value={address}
-                    //editable={!this.state.isShowActivity}
-                    // onChangeText={(text) => this.setState({ password: text })}
+                        //editable={!this.state.isShowActivity}
+                        onChangeText={(text) => this.setState({ address: text })}
                     />
                 </View>
                 <View>
-                    <TouchableOpacity style={button}>
+                    <TouchableOpacity style={button} onPress={() => this._ChangeInfomation(fullname, email, phone, address)}>
                         <Text style={btnText}>Change Infomation</Text>
                     </TouchableOpacity>
                 </View>
