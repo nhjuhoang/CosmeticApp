@@ -21,21 +21,21 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.3/jars/libs/infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_1e60665ab9f39a41fb2ee596902a46b79116c9cd.jar" />
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/infer-annotations-4.0_4c8e08f39d4785aef65add86aa45f238dc67c522.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/CosmeticRN/react-native-vector-icons/unspecified/jars/classes.jar"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="279750fed3c920d06351dbf32889c1b48203c7ad">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/CosmeticRN-react-native-vector-icons-unspecified_10dc343b245aaa882f5e0deb790948b5cab4b862.jar" />
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/internal_impl-23.0.1_d7829b0c7e9920046bdd18bfb8146d9cdd51155a.jar" />
     </item>
     <item
         is-multidex="false"
@@ -48,21 +48,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/CosmeticRN/react-native-vector-icons/unspecified/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_98563a5082d35898c9973349a6962d93163159f5.jar" />
+        sha1="279750fed3c920d06351dbf32889c1b48203c7ad">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/CosmeticRN-react-native-vector-icons-unspecified_c2623ffb8d78aaae606839df2ff7e016e472b09a.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_a4b8d55586a62ee59510e1f960920473b484fdc3.jar" />
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_01980423f2dc24617169552ead270451ce8aa012.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_feffc4e5575e94a9ac184f2f92fc4c6418f1792f.jar" />
     </item>
     <item
         is-multidex="false"
@@ -75,33 +84,6 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/hoangnhieu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_9680076d2a2fcb8235c273639c53e1e6d31562a4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_96a5cccc84a90aed7d543c46bb57bc7f0352e040.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_8e4b82a952d511db77b0556c062e58a144742837.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/hoangnhieu/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.13.0/a9283170b7305c8d92d25aff02a6ab7e45d06cbe/okio-1.13.0.jar"
         jumboMode="false"
         optimize="true"
@@ -111,12 +93,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_fc40e4d1fd6880ecc9f9d57d706633a2429d8b29.jar" />
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_5c2263a8660df7077e404d9e1cb08710474f789c.jar" />
     </item>
     <item
         is-multidex="false"
@@ -147,6 +129,159 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_e16d6428ce45abe3b81159dc9fd4e93861e58de5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_c340892f5645195dae228e34442f195714650518.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_0b638fda0f94e0b09056080ed8e1120b4566c0b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-base/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-base-1.3.0_2555a4ed1b6b5522a926c3d73890aab2ca2386cc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_1e60665ab9f39a41fb2ee596902a46b79116c9cd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_6620f50a28f472bacc54fc8095bf6e9af831405b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-1.3.0_35f1afe8977c473d4b5f6c338e87990d3c797365.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/CosmeticRN/react-native-vector-icons/unspecified/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="279750fed3c920d06351dbf32889c1b48203c7ad">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/CosmeticRN-react-native-vector-icons-unspecified_10dc343b245aaa882f5e0deb790948b5cab4b862.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-23.0.1_98563a5082d35898c9973349a6962d93163159f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_a4b8d55586a62ee59510e1f960920473b484fdc3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.6.0/3f9b16b774f2c36cfd86dd2053d0b3059531dacc/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/okhttp-urlconnection-3.6.0_9680076d2a2fcb8235c273639c53e1e6d31562a4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fbcore/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fbcore-1.3.0_96a5cccc84a90aed7d543c46bb57bc7f0352e040.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/fresco/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-fresco-1.3.0_8e4b82a952d511db77b0556c062e58a144742837.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_0f99ce8b3dba283400d5e80c4f342664d9e920ab.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.react/react-native/0.55.3/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="01f201f8a16c7438c9ee4c56139d01663f2cb0e4">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.react-react-native-0.55.3_7bb24874582545e9ca7f30ca26f2f34ee988b7b8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/imagepipeline-okhttp3/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-imagepipeline-okhttp3-1.3.0_fc40e4d1fd6880ecc9f9d57d706633a2429d8b29.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.facebook.soloader-soloader-0.1.0_c73b7a36372b5de6d24167305cd56a1528f862b3.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.soloader/soloader/0.1.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
@@ -165,6 +300,15 @@
     </item>
     <item
         is-multidex="false"
+        jar="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/hoangnhieu/Desktop/CosmeticApp/android/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-23.0.1_3494cb4abe0a303b0094143b2f7dd61359ff42b2.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/hoangnhieu/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
@@ -174,30 +318,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/hoangnhieu/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/bolts-tasks-1.4.0_c340892f5645195dae228e34442f195714650518.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fbui.textlayoutbuilder/textlayoutbuilder/1.0.0/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
         <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_aaafdb535fce9333582bbb8032772f34c2b9c00d.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/exploded-aar/com.facebook.fresco/drawee/1.3.0/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="/Users/hoangnhieu/Desktop/CosmeticRN/android/app/build/intermediates/pre-dexed/debug/com.facebook.fresco-drawee-1.3.0_0b638fda0f94e0b09056080ed8e1120b4566c0b6.jar" />
     </item>
 
 </items>

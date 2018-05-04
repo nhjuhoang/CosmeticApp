@@ -3,12 +3,13 @@ import {
     Platform, StyleSheet, Text,
     View, Dimensions, TextInput,
     ScrollView, TouchableOpacity, FlatList,
-    Image, ActivityIndicator
+    Image, ActivityIndicator, Modal, Alert
 } from 'react-native';
 
 import Header from './Header';
 import GetToken from '../Api/GetToken';
 import { firebaseApp } from '../Api/firebaseConfig';
+import globalCart from '../globalCart';
 
 export default class ConfirmCart extends Component {
 
@@ -20,7 +21,7 @@ export default class ConfirmCart extends Component {
             address: '',
             note: '',
             user: null,
-            isLoading: false
+            isLoading: false,
         }
     }
 
@@ -42,8 +43,9 @@ export default class ConfirmCart extends Component {
         GetToken()
             .then(token => {
                 if (token !== '') {
-                    console.log('abd abdha bsdbash dbadasdasdasahdbash bdhsbd', token)
+                    this._getuser(token)
                 }
+                this.setState({ isLoading: true })
             })
             .catch(err => console.log('LOI CHECK LOGIN', err));
     }
@@ -88,7 +90,7 @@ export default class ConfirmCart extends Component {
         ARRCART.forEach(item => {
             this._CreateBillDetail(idbill, item.product.key, item.quantity, (item.product.price * item.quantity));
         });
-        alert('ok')
+        this._alertConfirmSuccess();
     }
 
     _makeIdBills() {
@@ -122,6 +124,21 @@ export default class ConfirmCart extends Component {
         return today;
     }
 
+    _clearCart(){
+        globalCart._ClearAll();
+        this.props.navigation.goBack();
+    }
+
+    _alertConfirmSuccess() {
+        Alert.alert(
+          'Success',
+          'you have successfully ordered. Thanks',
+          [
+            { text: 'OK', onPress: () => this._clearCart()},
+          ],
+          { cancelable: false }
+        )
+      }
 
     render() {
         const { container, mapContainer, fromConfirm,
@@ -134,8 +151,6 @@ export default class ConfirmCart extends Component {
         const arrCart = params.arr;
 
         const { fullname, phone, email, address, note, user, isLoading } = this.state;
-
-        console.log(user)
 
         const header = (<Header total={total} />);
 
@@ -223,6 +238,8 @@ export default class ConfirmCart extends Component {
                 </TouchableOpacity>
             </View>
         );
+
+
         return (
             isLoading ?
                 <View style={container} >
