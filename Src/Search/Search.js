@@ -136,7 +136,8 @@ const styles = StyleSheet.create({
   ViewinputSearch: {
     backgroundColor: '#F4F4F4',
     height: 50,
-    borderRadius: 25,
+    borderRadius: 10,
+    marginTop: 5
   },
   inputSearch: {
     height: 50,
