@@ -57,7 +57,7 @@ export default class Login extends Component {
       registerText, register, btnRegister } = styles;
 
     const textError = this.state.error ? <Text style={{ justifyContent: 'center', textAlign: 'center', color: 'red' }}>{this.state.error}</Text> : null;
-    const activity = isShowActivity ? <Activity animating={isShowActivity} /> : null;
+    const activity = isShowActivity ? <Activity loading={isShowActivity} /> : null;
     
     return (
       <View style={{ flex: 1 }}>
@@ -72,7 +72,7 @@ export default class Login extends Component {
               underlineColorAndroid='rgba(0,0,0,0)'
               autoCapitalize='none'
               autoCorrect={false}
-              editable={!this.state.isShowActivity}
+              // editable={!this.state.isShowActivity}
               onChangeText={(text) => this.setState({ email: text })}
             />
             <TextInput style={inputbox}
@@ -82,7 +82,7 @@ export default class Login extends Component {
               underlineColorAndroid='rgba(0,0,0,0)'
               autoCapitalize='none'
               autoCorrect={false}
-              editable={!this.state.isShowActivity}
+              // editable={!this.state.isShowActivity}
               onChangeText={(text) => this.setState({ password: text })}
             />
             <TouchableOpacity style={button} onPress={() => this._Login()}>

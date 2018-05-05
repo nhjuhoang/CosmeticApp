@@ -43,6 +43,10 @@ export default class OrderHistory extends Component {
         });
     }
 
+    _goOrderDetail(id,title) {
+        this.props.navigation.navigate('OrderdetailScreen', { idbill: id, title: title });
+    }
+
     _ObjectToArray(obj) {
         if (obj != null) {
             var arr = Object.keys(obj).map(key => obj[key]);
@@ -61,7 +65,7 @@ export default class OrderHistory extends Component {
         const { container, body, itemContainer, itemStyle } = styles;
         const { arrOrder } = this.state;
         const listOrder = arrOrder ? arrOrder : null;
-        console.log(listOrder);
+        //console.log(listOrder);
         return (
             <View style={container}>
                 <FlatList
@@ -70,7 +74,7 @@ export default class OrderHistory extends Component {
                     data={listOrder}
                     keyExtractor={(item, index) => index.toString()}
                     renderItem={({ item }) =>
-                        <TouchableOpacity style={itemContainer}>
+                        <TouchableOpacity style={itemContainer} onPress={()=> this._goOrderDetail(item.key, item.key)}>
                             <View style={itemStyle}>
                                 <Text>ID :</Text>
                                 <Text>{item.key}</Text>
@@ -81,7 +85,7 @@ export default class OrderHistory extends Component {
                             </View>
                             <View style={itemStyle}>
                                 <Text>Total :</Text>
-                                <Text style={{color: '#FC4B38'}}>{item.total} $</Text>
+                                <Text style={{ color: '#FC4B38' }}>{item.total} $</Text>
                             </View>
                             <View style={itemStyle}>
                                 <Text>Status :</Text>

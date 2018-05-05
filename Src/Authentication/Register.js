@@ -91,7 +91,7 @@ export default class Register extends Component {
       registerText, register, btnRegister } = styles;
     const { isShowActivity } = this.state;
     const textError = this.state.error ? <Text style={{ justifyContent: 'center', textAlign: 'center', color: 'red' }}>{this.state.error}</Text> : null;
-    const activity = isShowActivity ? <Activity animating={isShowActivity} /> : null;
+    const activity = isShowActivity ? <Activity loading={isShowActivity} /> : null;
     return (
       <View style={{ flex: 1 }}>
         <View style={container}>

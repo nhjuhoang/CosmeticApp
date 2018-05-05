@@ -65,11 +65,11 @@ export default class ConfirmCart extends Component {
         this.props.navigation.navigate('logInScreen');
     }
 
-    _CreateBillDetail(id_bill, id_product, quantity, price) {
+    _CreateBillDetail(id_bill, product, quantity, price) {
         var id = this._makeIdBilldetails();
         firebaseApp.database().ref('billDetails').child(id).set({
             idBill: id_bill,
-            idProduct: id_product,
+            product: product,
             quantity: quantity,
             price: price
         });
@@ -88,7 +88,7 @@ export default class ConfirmCart extends Component {
             status: status
         });
         ARRCART.forEach(item => {
-            this._CreateBillDetail(idbill, item.product.key, item.quantity, (item.product.price * item.quantity));
+            this._CreateBillDetail(idbill, item.product, item.quantity, (item.product.price * item.quantity));
         });
         this._alertConfirmSuccess();
     }

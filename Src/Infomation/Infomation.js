@@ -94,9 +94,9 @@ export default class Infomation extends Component {
                     />
 
                     <Text>Address</Text>
-                    <TextInput style={inputbox}
+                    <TextInput style={[inputbox, { height: 100, textAlignVertical: "top" }]}
                         multiline={true}
-                        numberOfLines={4}
+                        numberOfLines={10}
                         underlineColorAndroid='rgba(0,0,0,0)'
                         autoCapitalize='none'
                         autoCorrect={false}
@@ -139,7 +139,7 @@ const styles = StyleSheet.create({
         color: 'black',
         fontSize: 16,
         marginBottom: 10,
-        marginTop: 3
+        marginTop: 3,
     },
     fromchange: {
         justifyContent: 'center',
